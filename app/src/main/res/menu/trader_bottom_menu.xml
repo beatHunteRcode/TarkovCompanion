@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/traderBuyScreenFragment2"
+        android:title="Покупка"
+        android:icon="@drawable/trader_buy_icon">
+    </item>
+    <item
+        android:id="@+id/traderSellScreenFragment2"
+        android:title="Продажа"
+        android:icon="@drawable/trader_sell_icon">
+    </item>
+</menu>

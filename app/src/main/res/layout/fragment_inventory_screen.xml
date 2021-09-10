@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InventoryScreenFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/button_color"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ruble_sign"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rubles_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="center"
+                    android:text="rubles_count"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/button_color"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/dollar_sign"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/dollars_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="center"
+                    android:text="dollars_count"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/button_color"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/euro_sign"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/euros_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="center"
+                    android:text="euros_count"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/helpful_background_color"
+            android:layout_margin="5dp">
+
+            <GridLayout
+                android:id="@+id/items_grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:rowCount="100"
+                android:columnCount="4">
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/inventory_item"-->
+<!--                    android:layout_width="85dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_gravity="fill"-->
+<!--                    android:text="TextView"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/button_color"-->
+<!--                    android:background="@drawable/item_container_icon"/>-->
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

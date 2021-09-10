@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/authorizeScreenFragment2">
+    <fragment
+        android:id="@+id/authorizeScreenFragment2"
+        android:name="com.example.tarkovcompanion.Fragments.AuthorizeScreenFragment"
+        android:label="fragment_authorize_screen"
+        tools:layout="@layout/fragment_authorize_screen" >
+        <action
+            android:id="@+id/action_authorizeScreenFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.tarkovcompanion.Fragments.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_inventoryScreenFragment"
+            app:destination="@id/inventoryScreenFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_tradersListScreenFragment"
+            app:destination="@id/tradersListScreenFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_sanctuaryScreenFragment"
+            app:destination="@id/sanctuaryScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.InventoryScreenFragment"
+        android:label="fragment_inventory_screen"
+        tools:layout="@layout/fragment_inventory_screen" />
+    <fragment
+        android:id="@+id/tradersListScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.TradersListScreenFragment"
+        android:label="fragment_traders_list_screen"
+        tools:layout="@layout/fragment_traders_list_screen" >
+        <action
+            android:id="@+id/action_tradersListScreenFragment_to_traderScreenFragment"
+            app:destination="@id/traderScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buildingScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.BuildingScreenFragment"
+        android:label="fragment_building_screen"
+        tools:layout="@layout/fragment_building_screen" />
+    <fragment
+        android:id="@+id/traderScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.TraderScreenFragment"
+        android:label="fragment_trader_screen"
+        tools:layout="@layout/fragment_trader_screen" />
+    <fragment
+        android:id="@+id/traderBuyScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.TraderBuyScreenFragment"
+        android:label="fragment_trader_buy_screen"
+        tools:layout="@layout/fragment_trader_buy_screen" />
+    <fragment
+        android:id="@+id/traderSellScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.TraderSellScreenFragment"
+        android:label="fragment_trader_sell_screen"
+        tools:layout="@layout/fragment_trader_sell_screen" />
+    <fragment
+        android:id="@+id/sanctuaryScreenFragment"
+        android:name="com.example.tarkovcompanion.Fragments.BuildingsListScreenFragment"
+        android:label="fragment_sanctuary_screen"
+        tools:layout="@layout/fragment_sanctuary_screen" >
+        <action
+            android:id="@+id/action_sanctuaryScreenFragment_to_buildingScreenFragment"
+            app:destination="@id/buildingScreenFragment" />
+    </fragment>
+</navigation>
